@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { TypedConfigModule } from './typed-config';
 
 @Module({
-  imports: [],
+  imports: [TypedConfigModule.forRoot()],
   controllers: [],
   providers: [],
 })
